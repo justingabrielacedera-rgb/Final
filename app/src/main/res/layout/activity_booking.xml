@@ -44,7 +44,6 @@
         android:padding="12dp"
         android:layout_marginBottom="20dp"/>
 
-    <!-- ✅ BAGONG DAGDAG: Oras ng Check-In -->
     <TextView
         android:id="@+id/tvCheckInTime"
         android:layout_width="match_parent"
@@ -57,7 +56,6 @@
         android:padding="10dp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- ✅ BAGONG DAGDAG: Oras ng Check-Out -->
     <TextView
         android:id="@+id/tvCheckOutTime"
         android:layout_width="match_parent"
@@ -70,7 +68,6 @@
         android:padding="10dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- ✅ BAGONG DAGDAG: Terms and Conditions -->
     <TextView
         android:id="@+id/tvTerms"
         android:layout_width="300dp"
