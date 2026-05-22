@@ -7,15 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class AdminDashboard extends AppCompatActivity {
-
-    // ✅ EKSAKTONG PANGALAN NG MGA ID MO
+    
     CardView cardViewPayments, cardReports, cardAnnouncements, cardManageRooms, cardManageUsers, cardMaintenance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // ✅ SIGURADUHIN NA MAKAKAPASOK KAHIT MAY ANONG ERROR
         try {
             setContentView(R.layout.activity_admin_dashboard);
             Toast.makeText(this, "✅ NAKAPASOK SA ADMIN PANEL!", Toast.LENGTH_SHORT).show();
@@ -25,14 +23,11 @@ public class AdminDashboard extends AppCompatActivity {
             return;
         }
 
-        // ✅ KUNIN ANG MGA BUTTON / CARD
         initViews();
 
-        // ✅ LAGYAN NG GAGAWIN KAPAG PININDOT
         setupClicks();
     }
 
-    // ✅ HANAPIN ANG MGA ELEMENTO
     private void initViews() {
         cardViewPayments = findViewById(R.id.cardViewPayments);
         cardReports = findViewById(R.id.cardReports);
@@ -42,10 +37,8 @@ public class AdminDashboard extends AppCompatActivity {
         cardMaintenance = findViewById(R.id.cardMaintenance);
     }
 
-    // ✅ GAGANA ANG PAG PINDOT
     private void setupClicks() {
         cardViewPayments.setOnClickListener(v -> {
-            // ✅ Opens the announcement posting screen
             Intent intent = new Intent(this, PaymentHistoryActivity .class);
             startActivity(intent);
         });
@@ -55,19 +48,16 @@ public class AdminDashboard extends AppCompatActivity {
         );
 
         cardAnnouncements.setOnClickListener(v -> {
-            // ✅ Opens the announcement posting screen
             Intent intent = new Intent(this, PostAnnouncementActivity.class);
             startActivity(intent);
         });
 
         cardManageRooms.setOnClickListener(v -> {
-            // ✅ Opens the announcement posting screen
             Intent intent = new Intent(this, ManageRoomsActivity.class);
             startActivity(intent);
         });
 
         cardManageUsers.setOnClickListener(v -> {
-            // ✅ Opens the announcement posting screen
             Intent intent = new Intent(this, ManageUsersActivity.class);
             startActivity(intent);
         });
