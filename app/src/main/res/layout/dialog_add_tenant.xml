@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etContact"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etRoomId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Room ID (Optional)"
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spnStatus"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/status_options" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tenant Allocation Type:" android:textStyle="bold" />
+    <Spinner android:id="@+id/spnTenantType" android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/tenant_type_options" android:minHeight="48dp" android:layout_marginBottom="12dp"/>
+
+    <EditText android:id="@+id/etNextPayment" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Next Payment Date (e.g., June 15)" android:layout_marginBottom="12dp" />
+
+    <EditText android:id="@+id/etDaysLeft" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Number of Booking Days Left (e.g., 5)" android:inputType="number" android:layout_marginBottom="12dp" android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- DOT INDICATOR (Unread marker) -->
+        <View
+            android:id="@+id/dotIndicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="#000"
+            android:shape="oval"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"/>
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/tvNotifTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notification Title"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <!-- DATE -->
+        <TextView
+            android:id="@+id/tvNotifDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jan 01, 2024"
+            android:textSize="11sp"
+            android:textColor="#7F7F7D"/>
+
+    </LinearLayout>
+
+    <!-- MESSAGE -->
+    <TextView
+        android:id="@+id/tvNotifMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification message here..."
+        android:textSize="13sp"
+        android:textColor="#7F7F7D"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"/>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F7FA"
+    android:scrollbars="vertical"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₱ 0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room details, capacity, features, etc."
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- ✅ BAGONG DAGDAG: Oras ng Check-In -->
+    <TextView
+        android:id="@+id/tvCheckInTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check-In Time: --:--"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:background="#E8F5E9"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ✅ BAGONG DAGDAG: Oras ng Check-Out -->
+    <TextView
+        android:id="@+id/tvCheckOutTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check-Out Time: --:--"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#C62828"
+        android:background="#FFEBEE"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ✅ BAGONG DAGDAG: Terms and Conditions -->
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="📋 Terms &amp; Conditions here..."
+        android:textSize="15sp"
+        android:lineSpacingExtra="3dp"
+        android:background="#FFF3E0"
+        android:textColor="#BF360C"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnProceedPayment"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Proceed to Payment"
+        android:backgroundTint="#FFE18A"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

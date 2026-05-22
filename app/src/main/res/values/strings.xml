@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FinalsActivity</string>
+    <string name="open">Open Navigation</string>
+    <string name="close">Close Navigation</string>
+    <string-array name="status_options">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+    <string name="price_format">₱ %s</string>
+    <string name="total_format">Total: ₱ %s</string>
+    <string name="days_format">%d Days</string>
+    <string name="default_web_client_id">841177066994-iqlbaee9imigdnn3jherkgpdb6ejt9v6.apps.googleusercontent.com</string>
+
+    <string-array name="tenant_type_options">
+        <item>Bedspace</item>
+        <item>Transient</item>
+    </string-array>
+</resources>

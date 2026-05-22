@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Property Name:" android:textSize="13sp" android:textColor="#555555" />
+        <Spinner android:id="@+id/spnProperty" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Room Name / No.:" android:textSize="13sp" android:textColor="#555555" />
+        <EditText android:id="@+id/etRoomName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g., Room 1" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Floor Placement:" android:textSize="13sp" android:textColor="#555555" />
+        <EditText android:id="@+id/etFloor" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g., 2nd Floor" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Room Rental Type:" android:textSize="13sp" android:textColor="#555555" />
+        <EditText android:id="@+id/etType" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Bedspace or Transient" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Price Configuration:" android:textSize="13sp" android:textColor="#555555" />
+        <EditText android:id="@+id/etPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g., ₱3,300/mo or ₱550/day" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Room Amenities / Notes:" android:textSize="13sp" android:textColor="#555555" />
+        <EditText android:id="@+id/etAmenities" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g., Aircon, Electric Fan" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Max Capacity (Number of Tenants):" android:textSize="13sp" android:textColor="#555555" />
+        <EditText android:id="@+id/etCapacity" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g., 4" android:inputType="number" />
+
+    </LinearLayout>
+</ScrollView>
